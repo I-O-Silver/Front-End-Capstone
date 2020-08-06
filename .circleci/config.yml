@@ -5,3 +5,9 @@ workflows:
   node-tests:
     jobs:
       - node/test
+      
+    steps:
+      - checkout
+
+      - run: npm install
+      - run: npm test
